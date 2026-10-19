@@ -1,0 +1,35 @@
+window#osd {
+  background-color: #1c1915;
+  color: #d8c7aa;
+  border: 1px solid #d8c7aa80;
+  border-radius: 0;
+  padding: 8px;
+  font-family: IBM 3270;
+  font-size: 13px;
+}
+
+window#osd progressbar {
+  min-height: 5px;
+}
+
+window#osd progressbar trough {
+  background-color: #342e26;
+  border-radius: 0;
+}
+
+window#osd progressbar progress {
+  background-color: #d8c7aa;
+  border-radius: 0;
+}
+
+window#osd label {
+  color: #d8c7aa;
+  font-family: IBM 3270;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+window#osd image {
+  color: #d8c7aa;
+}
+
