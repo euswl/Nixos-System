@@ -1,0 +1,94 @@
+* {
+    font-family: "FantasqueSansM Nerd Font Mono";
+    font-size: 13px;
+    font-weight: bold;
+    color: #F2E8C9;
+    background-color: transparent;
+    padding: 0 10px;
+    margin: 5px 1px;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces {
+    padding: 0 13px;
+    margin: 0 2px;
+}
+
+#workspaces button {
+    color: #F2E8C9;
+    background-color: #141512;
+    padding: 0 13px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button.focused,
+#workspaces button.urgent {
+    color: #141512;
+    background-color: #C9B890;
+}
+
+#workspaces button:hover {
+    background-color: #C9B890;
+    color: #141512;
+    box-shadow: none;
+}
+
+#clock.time {
+    color: #141512;
+    background-color: #C9B890;
+}
+
+#memory {
+    color: #141512;
+    background-color: #C9B890;
+}
+
+#battery { 
+    color: #C9B890;
+    background-color: #141512;
+}
+
+#pulseaudio {
+    color: #F2E8C9;
+    background-color: #141512;
+}
+
+#network {
+    color: #141512;
+    background-color: #C9B890;
+}
+
+#network.ethernet {
+    color: #F2E8C9;
+    background-color: #141512;
+}
+
+#network.disconnected {
+    color: #141512;
+    background-color: #C9B890;
+}
+
+#custom-now-playing {
+    color: #C9B890;
+    background-color: #141512;
+}
+
+#tray {
+    background-color: #141512;
+    padding: 0 15px;
+}
+
+tooltip {
+    background-color: #141512;
+    border: 1px solid #C9B890;
+}
+
+tooltip label {
+    color: #F2E8C9;
+}

@@ -1,0 +1,69 @@
+{
+  "layer": "top",
+  "height": 15,
+  "modules-left": [
+    "sway/workspaces",
+    "custom/now-playing"
+  ],
+  "modules-center": [
+    "clock#time"
+  ],
+  "modules-right": [
+    "network",
+    "battery",
+    "memory",
+    "pulseaudio"
+  ],
+
+  "sway/workspaces": {
+    "format": "{name}",
+    "disable-scroll": true
+  },
+
+  "network": {
+    "format-wifi": "{icon} {essid}",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󰖪 Disconnected",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "tooltip-format": "{ifname}: {ipaddr}",
+    "interval": 1
+  },
+
+  "memory": {
+    "format": " {percentage}%",
+    "interval": 5
+  },
+
+"battery": {
+  "format": "{icon} {capacity}%",
+  "format-icons": ["", "", "", "", ""]
+},
+
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 {volume}%",
+    "format-icons": {
+      "default": ["󰝟", "󰕿", "󰕾"]
+    },
+    "on-click": "pamixer -t",
+    "on-scroll-up": "pamixer -i 2",
+    "on-scroll-down": "pamixer -d 2"
+  },
+
+  "clock#time": {
+    "format": " {:%I:%M - %p}"
+  },
+
+  "tray": {
+    "icon-size": 25,
+    "spacing": 10
+  },
+
+  "custom/now-playing": {
+    "exec": "~/.config/waybar/now-playing.sh",
+    "interval": 2,
+    "format": "♫ {}",
+    "return-type": "plain"
+  }
+}
