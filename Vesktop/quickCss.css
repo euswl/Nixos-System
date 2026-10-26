@@ -1,0 +1,36 @@
+:root,
+.theme-dark {
+  --text-normal: #C9B890 !important;
+  --text-muted: #A99B7A !important;
+  --header-primary: #E2D5B5 !important;
+  --header-secondary: #C9B890 !important;
+  --interactive-normal: #C9B890 !important;
+  --interactive-hover: #E2D5B5 !important;
+  --interactive-active: #F0E8D8 !important;
+  --interactive-muted: #786F5B !important;
+  --brand-experiment: #C9B890 !important;
+  --brand-experiment-560: #C9B890 !important;
+  --brand-experiment-600: #B8A578 !important;
+  --brand-experiment-700: #9A875F !important;
+  --text-link: #D8C99F !important;
+}
+
+/* Settings text and navigation */
+[class*="standardSidebarView"],
+[class*="sidebarRegion"],
+[class*="contentRegion"] {
+  color: #C9B890 !important;
+}
+
+/* Icons: apply the warm accent instead of green */
+svg,
+svg * {
+  color: #C9B890 !important;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* Keep your square-corner styling */
+* {
+  border-radius: 0 !important;
+}
